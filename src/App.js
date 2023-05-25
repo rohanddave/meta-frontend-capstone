@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import HomeSection from './components/HomeSection';
 import SectionContainer from './components/SectionContainer';
@@ -9,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+
       <SectionContainer>
         <HomeSection />
       </SectionContainer>
@@ -20,6 +22,11 @@ function App() {
       <SectionContainer>
         <TestimonialSection />
       </SectionContainer>
+
+      <SectionContainer>
+        <Footer />
+      </SectionContainer>
+
     </div>
   );
 }
