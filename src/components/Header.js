@@ -25,9 +25,9 @@ function Header() {
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav w-100 nav-fill"> {/* Added 'w-100' and 'nav-fill' classes */}
+                            <ul className="navbar-nav w-100 nav-fill">
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="/#">
+                                    <a className="nav-link" aria-current="page" href="/#">
                                         Home
                                     </a>
                                 </li>
@@ -37,7 +37,7 @@ function Header() {
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="/#">
+                                    <a className="nav-link" aria-current="page" href="/#">
                                         Menu
                                     </a>
                                 </li>
@@ -47,7 +47,7 @@ function Header() {
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="/#">
+                                    <a className="nav-link" aria-current="page" href="/#">
                                         Order Online
                                     </a>
                                 </li>
