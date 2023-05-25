@@ -1,5 +1,6 @@
 import React from 'react'
 import TestimonialCard from './TestimonialCard';
+import SectionContainer from './SectionContainer';
 
 const testimonials = [
   {
@@ -42,7 +43,7 @@ const testimonials = [
 
 function TestimonialSection() {
   return (
-    <>
+    <SectionContainer>
       <div className="row justify-content-center">
         <h2>Testimonials</h2>
       </div>
@@ -53,7 +54,7 @@ function TestimonialSection() {
           </div>
         ))}
       </div>
-    </>
+    </SectionContainer>
   )
 }
 

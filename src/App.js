@@ -2,30 +2,24 @@ import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import HomeSection from './components/HomeSection';
-import SectionContainer from './components/SectionContainer';
 import SpecialSection from './components/SpecialSection';
 import TestimonialSection from './components/TestimonialSection';
+import StorySection from './components/StorySection';
 
 function App() {
   return (
     <div className="App">
       <Header />
 
-      <SectionContainer>
-        <HomeSection />
-      </SectionContainer>
+      <HomeSection />
 
-      <SectionContainer>
-        <SpecialSection />
-      </SectionContainer>
+      <SpecialSection />
 
-      <SectionContainer>
-        <TestimonialSection />
-      </SectionContainer>
+      <TestimonialSection />
 
-      <SectionContainer>
-        <Footer />
-      </SectionContainer>
+      <StorySection />
+
+      <Footer />
 
     </div>
   );

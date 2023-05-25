@@ -1,5 +1,6 @@
 import React from 'react'
 import ItemCard from './ItemCard';
+import SectionContainer from './SectionContainer';
 
 const items = [
     {
@@ -24,7 +25,7 @@ const items = [
 
 function SpecialSection() {
     return (
-        <>
+        <SectionContainer>
             <div className="row justify-content-center">
                 <div className="col-md-6 text-md-start">
                     <h2>Specials</h2>
@@ -40,7 +41,7 @@ function SpecialSection() {
                     </div>
                 ))}
             </div>
-        </>
+        </SectionContainer>
     )
 }
 
