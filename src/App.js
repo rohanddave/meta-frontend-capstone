@@ -1,26 +1,20 @@
 import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import HomeSection from './components/HomeSection';
-import SpecialSection from './components/SpecialSection';
-import TestimonialSection from './components/TestimonialSection';
-import StorySection from './components/StorySection';
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import Booking from './components/Booking';
+import Layout from './components/Layout';
 function App() {
   return (
     <div className="App">
-      <Header />
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/booking' element={<Booking />} />
+          </Routes>
+        </Layout>
 
-      <HomeSection />
-
-      <SpecialSection />
-
-      <TestimonialSection />
-
-      <StorySection />
-
-      <Footer />
-
+      </BrowserRouter>
     </div>
   );
 }

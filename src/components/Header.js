@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
     return (
@@ -42,9 +43,9 @@ function Header() {
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/#">
-                                        Reservation
-                                    </a>
+                                    <Link to='/booking' className="nav-link" href="/#">
+                                        Booking
+                                    </Link>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" aria-current="page" href="/#">
