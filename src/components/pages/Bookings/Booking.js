@@ -1,37 +1,23 @@
 import React, { useReducer } from 'react';
 import BookingForm from './BookingForm';
+import { fetchAPI, submitAPI } from '../../../utils/api';
 
-const times = ["17:00", "18:00", "19:00", "20:00"];
+function initializeTimes() {
+    const times = fetchAPI(new Date());
+    return times;
+}
+
+function updateTimes(availableTimes, date) {
+    return fetchAPI(date);
+}
 
 function Booking() {
-    const onSubmit = (values) => {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                const random = Math.random();
-                random > 0.5 ? resolve() : reject();
-            }, 100);
-        });
-    };
-
     const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
     const occasions = ["birthday", "anniversary"];
 
-    function initializeTimes() {
-        return times;
-    }
-
-    function updateTimes() {
-        const min = 0;
-        const max = 3;
-        const random = Math.floor(Math.random() * (max - min + 1)) + min;
-        console.log(random);
-        return times.slice(0, random);
-    }
-
-
     return (
         <BookingForm
-            handleSubmit={onSubmit}
+            handleSubmit={submitAPI}
             occasions={occasions}
             availableTimes={availableTimes}
             dispatchDateChange={dispatch}

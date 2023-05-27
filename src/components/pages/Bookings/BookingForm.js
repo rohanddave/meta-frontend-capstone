@@ -10,7 +10,7 @@ function BookingForm({ handleSubmit, occasions, availableTimes, dispatchDateChan
 
     const formik = useFormik({
         initialValues: {
-            date: '',
+            date: new Date(),
             time: '',
             guests: 1,
             occasion: '',
@@ -87,7 +87,7 @@ function BookingForm({ handleSubmit, occasions, availableTimes, dispatchDateChan
                             name="date"
                             value={formik.values.date}
                             onChange={(e) => {
-                                dispatchDateChange(e);
+                                dispatchDateChange(new Date(e.target.value));
                                 formik.handleChange(e);
                             }}
                             className="form-control"
