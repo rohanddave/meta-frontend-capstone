@@ -3,18 +3,21 @@ import ItemCard from './ItemCard';
 
 const items = [
     {
+        id: 'a',
         title: 'Greek Salad',
         img: 'https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sollicitudin pulvinar mattis. Fusce hendrerit lorem accumsan nunc laoreet fermentum.',
         price: 2.98,
     },
     {
+        id: 'b',
         title: 'Bruchetta',
         img: 'https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sollicitudin pulvinar mattis. Fusce hendrerit lorem accumsan nunc laoreet fermentum.',
         price: 5.00,
     },
     {
+        id: 'c',
         title: 'Lemon Dessert',
         img: 'https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sollicitudin pulvinar mattis. Fusce hendrerit lorem accumsan nunc laoreet fermentum.',
