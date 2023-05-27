@@ -1,6 +1,7 @@
 import React from 'react'
 import FooterList from './FooterList'
 import SectionContainer from './SectionContainer'
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -12,7 +13,7 @@ function Footer() {
                     </div>
                     <div class="col-md-3">
                         <FooterList heading="Navigation">
-                            <a href="/#">Home</a>
+                            <Link to='/'>Home</Link>
                             <a href="/#">About</a>
                             <a href="/#">Menu</a>
                             <a href="/#">Reservations</a>

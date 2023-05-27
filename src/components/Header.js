@@ -28,9 +28,9 @@ function Header() {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav w-100 nav-fill">
                                 <li className="nav-item">
-                                    <a className="nav-link" aria-current="page" href="/#">
+                                    <Link className="nav-link" aria-current="page" to="/">
                                         Home
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/#">
