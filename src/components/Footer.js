@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 function Footer() {
     return (
         <SectionContainer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-3">
                         <img src="https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png" alt="Logo" className='img-fluid' />
                     </div>
-                    <div class="col-md-3">
+                    <div className="col-md-3">
                         <FooterList heading="Navigation">
                             <Link to='/'>Home</Link>
                             <a href="/#">About</a>
@@ -22,7 +22,7 @@ function Footer() {
                         </FooterList>
                     </div>
 
-                    <div class="col-md-3">
+                    <div className="col-md-3">
                         <FooterList heading="Contact">
                             <a href="/#">Address</a>
                             <a href="/#">Phone Number</a>
@@ -30,7 +30,7 @@ function Footer() {
                         </FooterList>
                     </div>
 
-                    <div class="col-md-3">
+                    <div className="col-md-3">
                         <FooterList heading="Social Media Links">
                             <a href="/#">Facebook</a>
                             <a href="/#">Instagram</a>
