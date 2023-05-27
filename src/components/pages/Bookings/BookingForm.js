@@ -2,9 +2,7 @@ import React, { useState } from 'react'
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
-
-
-function BookingsForm({ handleSubmit, occasions, availableTimes, dispatchDateChange }) {
+function BookingForm({ handleSubmit, occasions, availableTimes, dispatchDateChange }) {
     const [showAlert, setShowAlert] = useState({
         show: false,
         type: 'success',
@@ -72,6 +70,7 @@ function BookingsForm({ handleSubmit, occasions, availableTimes, dispatchDateCha
 
     return (
         <>
+            <h1>Make a Reservation</h1>
             {showAlert.show && (
                 <div className={`alert alert-${showAlert.type} alert-dismissible fade show`} role="alert">
                     {responseMessages[showAlert.type]}
@@ -162,4 +161,4 @@ function BookingsForm({ handleSubmit, occasions, availableTimes, dispatchDateCha
     )
 }
 
-export default BookingsForm
+export default BookingForm

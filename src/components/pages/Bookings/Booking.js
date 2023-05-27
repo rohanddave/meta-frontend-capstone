@@ -1,9 +1,7 @@
 import React, { useReducer } from 'react';
-
-import BookingsForm from '../BookingsForm';
+import BookingForm from './BookingForm';
 
 const times = ["17:00", "18:00", "19:00", "20:00"];
-
 
 function Booking() {
     const onSubmit = (values) => {
@@ -32,7 +30,7 @@ function Booking() {
 
 
     return (
-        <BookingsForm
+        <BookingForm
             handleSubmit={onSubmit}
             occasions={occasions}
             availableTimes={availableTimes}
